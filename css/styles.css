@@ -11,17 +11,27 @@ body{
     background-color: #fff;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: #000000;
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     max-width: 1400px;
     margin: 0 auto;
 }
-h1,h2,h3,h4,h5,h6, p{
+h1,h2,h3,h4,h5,h6{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+}
+
+p{
+    color: #86878b;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.section-margin{
+    padding: 100px 0px;
 }
 
 /* end Common Css */
@@ -98,7 +108,7 @@ h1,h2,h3,h4,h5,h6, p{
     justify-content: space-between;
 }
 .hero-caption{
-    width: 50%;
+    width: 45%;
     margin: 60px 0px;
 }
 
@@ -111,6 +121,7 @@ h1,h2,h3,h4,h5,h6, p{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 35px;
+    color: #fff;
     margin-bottom: 30px;
     position: relative;
 }
@@ -129,7 +140,8 @@ h1,h2,h3,h4,h5,h6, p{
 
 .hero-caption p{
     font-weight: 100;
-    padding: 30px 0px;
+    padding: 35px 0px;
+    color: #fff;
 }
 
 .hero-caption .button{
@@ -138,6 +150,7 @@ h1,h2,h3,h4,h5,h6, p{
     border: 2px solid gray;
     color: #fff;
     transition: 0.3s;
+    margin-bottom: 40px;
 }
 
 .hero-caption .button:hover{
@@ -177,8 +190,8 @@ h1,h2,h3,h4,h5,h6, p{
     width: 90%;
     margin: 0 auto;
     border: none;
-    padding: 15px 10px 10px 10px;
-    border-bottom: 1px solid gray;
+    padding: 25px 10px 10px 10px;
+    border-bottom: 1px solid rgb(151, 150, 150);
     margin-left: 20px;
     margin-top: 15px;
 }
@@ -188,9 +201,342 @@ h1,h2,h3,h4,h5,h6, p{
     text-align: center;
     padding: 15px;
     border: none;
-    background-color: #ff9b51;
+    background-color: #f5f5f5;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-top: 20px
+    margin-top: 20px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
     
+}
+
+.hero-form form button:hover{
+    background-color: #ff9b51;
+   
+}
+
+/* Hero css end */
+
+/* social css start */
+#social-section{
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    clear: both;
+    
+}
+
+.social-area{
+    width: 100%;
+}
+
+.social-caption{
+    width: 40%;
+    max-width: 600px;
+    float: left;
+}
+
+
+.social-caption h3{
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.social-caption p{
+    color: #86878b;
+    margin-bottom: 20px;
+}
+
+.social-caption h3,.social-caption p{
+    margin-left: 80px;
+
+}
+
+
+.social-icons{
+    width: 60%;
+    max-width: 750px;
+    float: right;
+}
+
+.social-icons ul{
+    list-style: none;
+    text-align: right;
+}
+
+.social-icons li{
+    display: inline-block;
+    align-items: center;
+    padding: 21px 30px;
+} 
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 50px;
+    color: #86878b;
+    transition: 0.3s;
+}
+.social-icons a:hover .fa-facebook{
+    color: #0F73E8;
+}
+.social-icons a:hover .fa-twitter{
+    color: #2195E8;
+}
+.social-icons a:hover .fa-google-plus-g{
+    color: #E13C37;
+}
+.social-icons a:hover .fa-pinterest{
+    color: #DC0017;
+}
+.social-icons a:hover .fa-instagram{
+    color: #D64E5E;
+}
+.social-icons a:hover .fa-rss{
+    color: #F7770A;
+}
+
+/* social css end */
+
+/* features css start */
+#features{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.inner-features{
+    overflow: hidden;
+}
+
+.inner-features{
+    overflow: hidden;
+}
+.feature-area{
+    width: 100%;
+    overflow: hidden;
+}
+
+.tab-area{
+   width: 250px;
+   max-width: 300px;
+   float: left;
+   padding-left: 50px;
+}
+
+.tab{
+    width: 100px;
+    height: 100px;
+    margin-top: 1px;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    padding-top: 35px;
+    transition: 0.3s;
+}
+
+.tab:hover{
+    background: #ff8b38;
+}
+
+.features-caption-area{
+    width: 500px;
+    max-width: 650px;
+    float: left;
+   
+}
+
+.features-caption-area h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.features-caption-area p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+    
+}
+
+.features-caption-area button{
+    padding: 12px 25px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    background-color: #333333;
+    color:#fff;
+    transition: 0.3s;
+}
+.features-caption-area button:hover{
+    background-color: #ff8b38;
+}
+
+.build-area{
+    width: 400px ;
+    max-width: 550px;
+    float: right;
+}
+
+.build-img{
+    margin-top: 35px;
+}
+/* features css end */
+
+/*  features Sub list area css start */
+#sub-list{
+    max-width: 100%;
+    clear: both;
+}
+.sub-list-area{
+    max-width: 100%;
+    overflow: hidden;
+}
+.sub-img{
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+.sub-img img{
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 5px 0px black;
+}
+.sub-caption{
+    max-width: 50%;
+    float: right;
+}
+.sub-header-area{
+    max-width: 100%;
+}
+.sub-header-area p{
+    margin: 30px 0px;
+}
+.sub-header{
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.sub-header::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    border-radius: 10%;
+    height: 2px;
+    bottom: -15px;
+    left: 0;
+    background-color: #ff8b38;
+}
+
+.titile-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.sub-icon{
+    margin-right: 20px;
+}
+
+.sub-icon{
+    font-size: 35px;
+    border: 3px solid #ff8b38;
+    border-radius: 25% 25% 50%;
+    color: #ff8b38;
+}
+
+/*  features Sub list area css end */
+
+/*  features standed building area css start */
+#features-3{
+    width: 100%;
+    clear: both;
+    background-color: #f5f5f5;
+}
+
+.standed-section-area{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.standed-title{
+    width: 600px;
+}
+.standed-title p{
+    margin: 30px 0px;
+}
+
+.stand-image-area{
+    width: 45%;
+    padding-left: 90px;
+    overflow: hidden;
+}
+
+.stand-image-area img{
+    width: 400px;
+    height: auto;
+
+}
+/*  features standed building area css end */
+
+/*  our process area css start */
+#our-process{
+    width: 100%;
+    clear: both;
+}
+.inner-process{
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+}
+.our-process-heading{
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.customize-h{
+    font-size: 50px;
+    color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.customize-h::after{
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 3px;
+    left: 45%;
+    bottom: 0px;
+    background-color: #ff8b38;
+}
+.process-category-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+.process-category{
+    max-width: 400px;
+    text-align: center;
+}
+.process-category i{
+    font-size: 30px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    padding: 5px;
+    color: #ff8b38;
+    margin-bottom: 20px;
+}
+.process-category h3{
+    font-weight: bold;
+    margin-bottom: 20px;
 }
