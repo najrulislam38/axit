@@ -31,9 +31,16 @@ p{
 }
 
 .section-margin{
-    padding: 100px 0px;
+    padding: 80px 0px;
 }
 
+input, textarea:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
 /* end Common Css */
 
 /* Header css start */
@@ -44,23 +51,25 @@ p{
     clear: both;
 }
 
-#header{
-    background: #000000;
-    width: 100vw;
-    clear: both;
-}
 .header-area{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .header-logo{
     width: 100px;
 }
 
+.header-logo a{
+    text-decoration: none;
+    display:inline;
+}
+
 .header-logo img{
-    padding: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
     align-items: center;
     
 }
@@ -186,7 +195,7 @@ p{
     font-weight: 400;
 }
 
-.hero-form form input[type="text"], input[type="email"], input[type="password"]{
+.hero-form form input[type="text"], .hero-form input[type="email"], .hero-form input[type="password"]{
     width: 90%;
     margin: 0 auto;
     border: none;
@@ -276,25 +285,30 @@ p{
     text-decoration: none;
     font-size: 50px;
     color: #86878b;
-    transition: 0.3s;
 }
-.social-icons a:hover .fa-facebook{
+.fa-facebook:hover{
     color: #0F73E8;
+    transition: .3s;
 }
-.social-icons a:hover .fa-twitter{
+.fa-twitter:hover{
     color: #2195E8;
+    transition: .3s;
 }
-.social-icons a:hover .fa-google-plus-g{
+.fa-google-plus-g:hover {
     color: #E13C37;
+    transition: .3s;
 }
-.social-icons a:hover .fa-pinterest{
+.fa-pinterest:hover {
     color: #DC0017;
+    transition: .3s;
 }
-.social-icons a:hover .fa-instagram{
+.fa-instagram:hover {
     color: #D64E5E;
+    transition: .3s;
 }
-.social-icons a:hover .fa-rss{
+.fa-rss:hover{
     color: #F7770A;
+    transition: .3s;
 }
 
 /* social css end */
@@ -332,6 +346,7 @@ p{
     color: #fff;
     text-align: center;
     padding-top: 35px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -495,9 +510,9 @@ p{
     max-width: 1400px;
     overflow: hidden;
 }
-.our-process-heading{
+.heading{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -507,6 +522,7 @@ p{
     padding: 20px;
     margin-bottom: 20px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .customize-h::after{
@@ -521,10 +537,10 @@ p{
 .process-category-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: space-evenly;
 }
 .process-category{
+    width: 350px;
     max-width: 400px;
     text-align: center;
 }
@@ -539,4 +555,262 @@ p{
 .process-category h3{
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+/*  our process area css end */
+
+/*  Pricing area css start */
+#pricing{
+    width: 100%;
+    background: #f5f5f5;
+    clear: both;
+}
+
+.pricing-category-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.pricing-category{
+    width: 350px;
+    max-width: 400px;
+    text-align: center;
+}
+.category-formatting{
+    background: #333333;
+    color: #fff;
+}
+
+.category-formatting h3{
+    padding: 10px 0px;
+    border-bottom: 1px solid #86878b;
+    font-weight: bold;
+}
+
+.category-formatting h1{
+    font-size: 50px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.category-formatting span{
+    font-size: 25px;
+    
+}
+
+.category-formatting p{
+    padding: 10px;
+    
+}
+
+.price-divider{
+    width: 100%;
+    height: 5px;
+    background-color: #ff8b38;
+}
+
+.popular{
+    background-color: #ff8b38;
+    padding: 5px 0px;
+}
+
+.category-details{
+    background-color: #fff;
+}
+
+.category-details ul{
+    list-style: none;
+}
+
+.category-details li{
+    padding: 10px 0px;
+    border-bottom: 0.5px solid #86878b;
+    color:#86878b;
+    font-size: 15px;
+}
+
+.category-details li:last-child{
+    border-bottom: none;
+}
+
+/*  Pricing area css end */
+
+/*  Reviews area css start */
+#reviews{
+    width: 100%;
+    clear: both;
+}
+.reviews-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.reviews-area{
+    width: 300px;
+    max-width: 400px;
+}
+
+.review{
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 5px;
+    position:relative;
+}
+
+.review::after{
+    background-color: #f5f5f5;
+    content: "";
+    width: 15px;
+    height: 15px;
+    left: 38px;
+    bottom: -5px;
+    position: absolute;
+}
+
+.reviewer{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.reviewer-img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.reviewer-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+
+.reviewer-name h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*  Reviews area css start */
+
+/*  Axure design area css start */
+#axure-design{
+    background: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+#axure-design button, #axure-design h1, #axure-design p{
+    color: #fff;
+}
+
+#axure-design button{
+    background: transparent;
+    border: 2px solid #86878b;
+    padding: 12px 20px;
+    font-size: bold;
+    transition: 0.3s;
+
+}
+
+
+#axure-design button:hover{
+    background: #ff8b38;
+    border: 2px solid #ff8b38;
+    
+}
+/*  Axure design area css end */
+
+/*  contact area css start */
+#contact{
+    width: 100%;
+    clear: both;
+    
+}
+
+.form{
+   width: 100%;
+}
+
+.input-wrapper{
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.textarea-wrapper{
+    width: 50%;
+    display: block;
+    float: right;
+}
+
+.form input, .form textarea{
+   display: block;
+   width: 500px ;
+   
+   margin-left: 50px;
+   padding: 34px 10px 10px 10px;
+   border: none;
+   border-bottom: 1px solid #bdbec2;
+   box-sizing: border-box;
+}
+
+.form textarea{
+   width: 500px ;
+   
+}
+
+.button{
+    text-align: center;
+}
+
+.form button{
+    font: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-top: 40px;
+    text-align: center;
+    border: none;
+    background-color: #F7770A;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.form button:hover{
+    background-color: #ff8b38;
+}
+/*  contact area css end */
+
+/*  footer area css start */
+#footer{
+    width: 100%;
+    background-color: #000000;
+}
+
+#footer ul{
+    list-style: none;
+    text-align: center;
+}
+
+#footer ul li{
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+#footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+#footer p{
+    text-align: center;
+    padding-bottom: 15px;
 }
